@@ -20,7 +20,7 @@ In a first step, we will analyze the data of healthy subjects. You find these in
 3. Next, we will try what neuroradiologist do to generate training data for our machine/deep learning models: Manually segment. We do that for the *corpus callosum*. Do a quick google search to get an idea of how this part of the brain looks on MRI.
 4. As soon as you have segmented the corpus callosum, you can compare it to the automated segmentation by FreeSurfer. For that, load the file "aparc+aseg.mgz" into 3D Slicer. The segments with the prefix "CC" define different parts of this brain structure.
 5. The dataset has already been processed with FreeSurfer by us. The aggregated volumes of the different brain regions for each subject is listed in the csv file in the data folder. We will use this to get a first overview of the data with plotting:
-   - As a starting point, you can use the Google Colab version of https://github.com/ysuter/bme-labs/blob/main/dataexploration.ipynb
+   - As a starting point, you can use the Google Colab version of https://github.com/ubern-mia/bme-labs/blob/main/dataexploration.ipynb
    - As already prepared in the Python notebook, plot the volumes of the different brain regions across the age.
    - Now stratify the data for men and women to see differences
    - Check the age distribution for males and females (for example with a boxplot)
