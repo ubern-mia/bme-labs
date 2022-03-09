@@ -25,3 +25,14 @@ In a first step, we will analyze the data of healthy subjects. You find these in
    - Now stratify the data for men and women to see differences
    - Check the age distribution for males and females (for example with a boxplot)
 6. In the end, we would like to identify neurodegenerative diseases from normal aging. Do a brief literature search, what regions might be affected for Alzheimer's disease and epilepsy.
+
+
+# Second session
+After you did an initial exploration of healtyh subject's data, we will now use additional data from epilepsy and autism spectrum disorder (ASD) patients to investigate further. We processed the whole dataset with FastSurfer to extract the size of given brain regions.
+
+
+## Tasks
+1. FastSurfer has a great speed advantage over the conventional FreeSurfer pipeline. Still, processing the whole dataset would take too much time and too little insight for you within one afternoon. To get an impression of the tool, visit https://colab.research.google.com/github/Deep-MI/FastSurfer/blob/master/Tutorial/Complete_FastSurfer_Tutorial.ipynb and perform an automated segmentation (use case 1)  for three subjects of your choice, possibly a healthy one, and one with epilepsy and ASD.
+2. The data you will work with today is located on the external drive: fsfaststats.csv It contains volume information for the whole dataset. The added "Disease" column gives you information on the status. Healthy subjects are encoded as "0", ASD patients with "1", and epilepsy patients with "2". The ASD data (and accompanying data of healthy subjects) stem from the ABIDE I dataset (http://fcon_1000.projects.nitrc.org/indi/abide/abide_I.html). Visit this website briefly to check out the general data description.
+3. Next, we we will do some basic data exploration and try to classify the disease automatically based on the extraced volumes. For this, we provide you with a Colab notebook to get you started: https://github.com/ubern-mia/bme-labs/blob/main/Session2.ipynb Please go through it and see if you understand what the general process is. 
+4. Next, we will try to get the best possible performance for disease classification. The scikit-learn package offers many classifiers apart from the Random Forest classifier you saw in the Colab notebook. Try to the Random Forest with other classifiers and note the performance on the training set (cross-validation), and test set. Please compile a table. When you apply a new classifier, briefly go over the basic principle behind it. Classifiers you could test: KNeighborsClassifier, SVC (Support Vector Classifier), AdaBoost, ...
