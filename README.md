@@ -28,7 +28,7 @@ In a first step, we will analyze the data of healthy subjects. You find these in
 
 
 # Second session
-After you did an initial exploration of healtyh subject's data, we will now use additional data from epilepsy and autism spectrum disorder (ASD) patients to investigate further. We processed the whole dataset with FastSurfer to extract the size of given brain regions.
+After you did an initial exploration of healthy subject's data, we will now use additional data from epilepsy and autism spectrum disorder (ASD) patients to investigate further. We processed the whole dataset with FastSurfer to extract the size of given brain regions.
 
 
 ## Tasks
