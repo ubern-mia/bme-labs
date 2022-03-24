@@ -24,7 +24,7 @@ In a first step, we will analyze the data of healthy subjects. You find these in
    - As already prepared in the Python notebook, plot the volumes of the different brain regions across the age.
    - Now stratify the data for men and women to see differences
    - Check the age distribution for males and females (for example with a boxplot)
-6. In the end, we would like to identify neurodegenerative diseases from normal aging. Do a brief literature search, what regions might be affected for Alzheimer's disease and epilepsy.
+6. In the end, we would like to identify neurodegenerative diseases from normal aging. Do a brief literature search, what regions might be affected for Autism Spectrum Disorder (ASD) and epilepsy.
 
 
 # Second session
