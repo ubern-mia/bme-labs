@@ -41,11 +41,13 @@ After you did an initial exploration of healthy subject's data, we will now use 
 Last time you gained some hands-on experience on training and testing classifiers. Today, you will wrap up these experiments and look into which features are actually imporant for this particular classification task. 
 
 ## Tasks
-1. First, please wrap-up the testing of different classifiers as in the last task of last week. If a 10-fold cross-validation takes too long for some classifiers, you may reduce the cross-validation splits to e.g. four in last week's Python notebook. But please re-run everything with the same number of splits to make sure you have a consistent performance comparison. Please try at least two classifiers apart from the Random Forest.
-2. For some classifiers, we can gain insight regarding which input features play an important role. The random forest classifier offers such insight very easily through the feature_importance_ attribute. Experiment briefly with the parameters n_estimators and max_depth to get the best performance for this classifier. Do not spend a lot of time with it. Based on this, you can look into the features importances with the help of today's Colab notebook https://github.com/ubern-mia/bme-labs/blob/main/Session3.ipynb. Does the most important features match what you would expect from the literature?
-3. That's it for new experiments for today, please take the remaining time to work on your report, generate figures and look up relevant references.
+1. First, please wrap-up the testing of different classifiers as in the last task of last week. Please try at least two classifiers apart from the Random Forest.
+2. For some classifiers, we can gain insight regarding which input features play an important role. The random forest classifier offers such insight very easily through the feature_importance_ attribute. Experiment briefly with the parameters n_estimators and max_depth to get the best performance for this classifier. Do not spend a lot of time with it. Based on this, you can look into the features importances with the help of today's Colab notebook https://github.com/ubern-mia/bme-labs/blob/main/Session3.ipynb. Does the most important features match what you would expect (from the literature)?
+3. Try out the permutation-based feature importance using the same Colab notebook as above.
+4. If you still have time, explore the permutation-based feature importances of the other classifiers as well. Are the same features the most important ones for all tested classifiers?
+5. That's it for new experiments for today, please take the remaining time to work on your report, generate figures and look up relevant references.
 
-(if you're interested, please also consider using the 'exploreClassificationModels.mlx' file - written in MATLAB - to see how various models work)
+If you're interested, please also consider using the 'exploreClassificationModels.mlx' file - written in MATLAB - to see how various models work.
 
 # References
 - [Fischl, B., 2012. FreeSurfer. Neuroimage, 62(2), pp.774-781.](https://www.sciencedirect.com/science/article/pii/S1053811912000389?casa_token=zcGnrEXdvoIAAAAA:ji7Sej8gSL32yFb6WJzsbVabxbVReS6lAsToc3-rXMhFWPCc8APADIjZ_as7vGilLCamRWNTb8rn)
