@@ -47,7 +47,7 @@ Last time you gained some hands-on experience on training and testing classifier
 4. If you still have time, explore the permutation-based feature importances of the other classifiers as well. Are the same features the most important ones for all tested classifiers?
 5. That's it for new experiments for today, please take the remaining time to work on your report, generate figures and look up relevant references.
 
-If you're interested, please also consider using the 'exploreClassificationModels.mlx' file - written in MATLAB - to see how various models work.
+If you're interested, please also consider using the 'session3.mlx' file - written in MATLAB - to see how various models work.
 
 # References
 - [Fischl, B., 2012. FreeSurfer. Neuroimage, 62(2), pp.774-781.](https://www.sciencedirect.com/science/article/pii/S1053811912000389?casa_token=zcGnrEXdvoIAAAAA:ji7Sej8gSL32yFb6WJzsbVabxbVReS6lAsToc3-rXMhFWPCc8APADIjZ_as7vGilLCamRWNTb8rn)
