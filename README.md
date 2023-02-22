@@ -1,6 +1,6 @@
 # First session
 
-Welcome to our 3-week BioMedical Engineering (BME) Lab on medical image analysis. We will focus on "TBD"!
+Welcome to our 3-week BioMedical Engineering (BME) Lab on medical image analysis. We will focus on "A.I. for automated medical image classification"!
 
 See [here](/session01/README.md) for more instructions and details.
 
@@ -10,7 +10,7 @@ We use data from the [MedMNIST v2 data set](https://medmnist.com/), specifically
 
 ## Tasks
 
-1. (30 minutes) Go over some introductory Deep Learning content (to be shared separately), reading medical image data (using Slicer), and a brief presentation of the analysis we plan to run. 
+1. (30 minutes) Go over some introductory Deep Learning content (to be shared separately) and a brief presentation of the analysis we plan to run. 
 2. (30 minutes) Setup google colab and be able to run the training script to completion - so the infrastructure is setup and you can focus on the incremental updates/tweaks next.
 3. (60 minutes) Appreciate what hyperparameters are available to tune: run through some of these and find out how it impacts the classification accuracy.
 4. (30 minutes) (optional) Go beyond version 7 - and try to tweak the training process to improve test accuracy beyond what has been reported in v7 (0.770).
