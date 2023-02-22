@@ -155,7 +155,7 @@ def evaluate_model(model: nn.Module, loader: DataLoader):
     pred_list = []
 
     for data in loader:
-        images, labels = data[0], data[1]
+        images, labels = data[0].to(device), data[1].to(device)
         labels = labels.squeeze().long()
 
         # calculate outputs by running images through the network
@@ -165,9 +165,9 @@ def evaluate_model(model: nn.Module, loader: DataLoader):
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 
-        for pred in predicted.numpy().tolist():
+        for pred in predicted.cpu().numpy().tolist():
             pred_list.append(pred)
-        for label in labels.numpy().tolist():
+        for label in labels.cpu().numpy().tolist():
             label_list.append(label)
 
     print(
@@ -201,12 +201,15 @@ def train(
     # Define the model and move it to the device. Define the optimizer for
     # the parameters of the model.
     model = CNN()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.005)
-    loss_function = torch.nn.CrossEntropyLoss()
+    model.to(device)
 
     # Compute the number of parameters of the model
     num_params = sum(p.numel() for p in model.parameters())
     print(f"Number of parameters: {num_params}")
+
+    # Setup the model training hyperparameters.
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.005)
+    loss_function = torch.nn.CrossEntropyLoss()
 
     # Iteration counter
     iteration = 0
@@ -240,8 +243,8 @@ def train(
             # Call .train() before training and .eval() before evaluation every
             # time!!
             model.train()
-            inputs = batch[0]
-            labels = batch[1]
+            inputs = batch[0].to(device)
+            labels = batch[1].to(device)
             labels = labels.squeeze().long()
 
             # Zero your gradients for every batch!
@@ -275,8 +278,8 @@ def train(
 
                 batch = next(iter(loader_val))
 
-                inputs = batch[0]
-                labels = batch[1]
+                inputs = batch[0].to(device)
+                labels = batch[1].to(device)
                 labels = labels.squeeze().long()
 
                 # Zero your gradients for every batch!
@@ -305,9 +308,6 @@ def train(
                     best_accuracy = accuracy
                     model_file = os.path.join(output_path, "best_model.pt")
                     # Save the model to the given `model_file`.
-                    # In principle, you should save not only the model,
-                    # but also the optimizer just in case you want to resume an
-                    # interrupted training.
                     torch.save(model.state_dict(), model_file)
                 else:
                     patience -= 1
@@ -326,6 +326,7 @@ def test():
     """
 
     model = CNN()
+    model.to(device)
     model_path = _get_output_path()
     model.load_state_dict(torch.load(model_path + "/best_model.pt"))
 
