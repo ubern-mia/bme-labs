@@ -17,11 +17,16 @@ We use data from the [MedMNIST v2 data set](https://medmnist.com/), specifically
 
 
 # Second session
-TBD - focused on interpretability and understanding why models work the way they do.
+In this session, we will use datasets that are closer to what is used in research or what we could expect to get from a hospital. The goal for this afternoon is to train and evaluate two classifiers for these tasks:
+1. Based on head MRI images, can we automatically classify if the image is from a woman or man? For this, we will use a resized version of the [IXI dataset](https://brain-development.org/ixi-dataset/).
+2. The second task is classifying breast ultrasound images if they have a malignant lesion, a benign lesion, or no lesion at all. The data we use for this is the [BUSI dataset](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset), which comes from a previous kaggle competition.
 
-
+As in the first session, we prepared a Python notebook for both tasks for you to get started.
 ## Tasks
-1. TBD
+1. We first have a small presentation about the data and some information about the task
+2. A prepared notebook for the two tasks are available in the Session 2 folder. There are two versions, we start with the ones without the "interpret" suffix
+3. Run the classifiers to see how they perform. Add an evaluation in the end, e.g., based on the "classification report" you saw in the first session.
+4. Generate some saliency maps with the provided code in the other notebook. Which regions does the network consider to be important?
 
 # Third session
 TBD - continuing interpretability and understanding of the model behavior, followed by some time reserved for report writing
