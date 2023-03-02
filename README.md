@@ -24,9 +24,11 @@ In this session, we will use datasets that are closer to what is used in researc
 As in the first session, we prepared a Python notebook for both tasks for you to get started.
 ## Tasks
 1. We first have a small presentation about the data and some information about the task
-2. A prepared notebook for the two tasks are available in the Session 2 folder. There are two versions, we start with the ones without the "interpret" suffix
-3. Run the classifiers to see how they perform. Add an evaluation in the end, e.g., based on the "classification report" you saw in the first session.
-4. Generate some saliency maps with the provided code in the other notebook. Which regions does the network consider to be important?
+2. Start with the notebook "Ultrasound-classification" in the session 2 folder
+3. As soon as your data download and unzipping is done, open the csv file and look at some examples of benign, malignant or healthy images. Can you classify them roughly by looking at them?
+4. Run the classifiers to see how they perform. Add an evaluation in the end, e.g., based on the "classification report" you saw in the first session.
+5. Generate some saliency maps with the provided code in the other notebook. Which regions does the network consider to be important? Generate these saliency maps for many samples. Look out for correctly and incorrectly classified images. Save a collection of these for your report
+6. Do you think the model interpretations make sense compared to what you would look for?
 
 # Third session
 TBD - continuing interpretability and understanding of the model behavior, followed by some time reserved for report writing
@@ -43,3 +45,5 @@ TBD - continuing interpretability and understanding of the model behavior, follo
 - For medical image visualization within tensorboard ("tensorboard3d"), [this nice plugin developed by Kitware](https://www.kitware.com/tensorboardplugin3d-visualizing-3d-deep-learning-models-in-tensorboard/) could be super useful for volumetric data.
 - [This](https://medium.com/miccai-educational-initiative/project-roadmap-for-the-medical-imaging-student-working-with-deep-learning-351add6066cf) blog post for more great tips while training models.
 - Consider following the [MICCAI Hackathon reproducibility checklist](https://github.com/JunMa11/MICCAI-Reproducibility-Checklist) to ensure that your pipeline is not too exotic, and future researchers can build on your work!
+- For a critical view on model explanations, we can recommend this paper: [Ghassemi, M., Oakden-Rayner, L. and Beam, A.L., 2021. The false hope of current approaches to explainable artificial intelligence in health care. The Lancet Digital Health, 3(11), pp.e745-e750.](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00208-9/fulltext)
+- Grad-CAM publication: [Selvaraju, R.R., Cogswell, M., Das, A., Vedantam, R., Parikh, D. and Batra, D., 2017. Grad-cam: Visual explanations from deep networks via gradient-based localization. In Proceedings of the IEEE international conference on computer vision (pp. 618-626).](https://openaccess.thecvf.com/content_iccv_2017/html/Selvaraju_Grad-CAM_Visual_Explanations_ICCV_2017_paper.html)
