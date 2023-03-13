@@ -31,10 +31,8 @@ As in the first session, we prepared a Python notebook for both tasks for you to
 6. Do you think the model interpretations make sense compared to what you would look for?
 
 # Third session
-TBD - continuing interpretability and understanding of the model behavior, followed by some time reserved for report writing
+Continue with the interpretability tasks from session 2 and some time reserved for report writing.
 
-## Tasks
-1. TBD
 
 # References
 - Jiancheng Yang, Rui Shi, Bingbing Ni. "MedMNIST Classification Decathlon: A Lightweight AutoML Benchmark for Medical Image Analysis". IEEE 18th International Symposium on Biomedical Imaging (ISBI), 2021.
